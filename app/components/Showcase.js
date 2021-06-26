@@ -12,9 +12,8 @@ const Showcase = () => {
                 <input className={style.search} type='text' placeholder='search for cards here...'></input>
 
             </div>
-            <div>
-                <h2 className={style.text_hold}>below are the current legal standard sets</h2>
-                
+            <div className={style.text_hold}>
+                <h2>below are the current legal standard sets</h2>
             </div>
         </>
     )

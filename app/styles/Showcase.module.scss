@@ -1,0 +1,31 @@
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    color: rgb(228, 228, 228);
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: -.5rem;
+        }
+
+        h2 {
+            font-style: italic;
+        }
+    
+}
+
+
+.search {
+    height: 2.5rem;
+    border-radius: .8rem;
+    outline: none;
+    border: none;
+    background-color: rgb(199, 199, 199);
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 70;
+}

@@ -1,15 +1,24 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, Roboto, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background: linear-gradient(123deg, rgba(11,8,59,1) 17%, rgba(108,37,78,1) 100%);
+  }
+
+  
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+
+
 
 * {
   box-sizing: border-box;

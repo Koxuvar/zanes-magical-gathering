@@ -1,0 +1,50 @@
+#container {
+    width: 100%;
+    display: inline-block;
+}
+  
+  /** HEADER */
+  
+  /** NAVIGATION BAR */
+.header {
+    overflow: hidden;
+    background-color: rgba(33, 78, 129, 0.24);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+
+    ul {
+      text-align: center;
+      list-style-type: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 15px;
+
+      li {
+        display: inline;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 17px;
+
+        a {
+          color: #e4e0e0;
+          text-decoration: none;
+          padding: 14px;
+          transition: 200ms ease-in-out;
+          
+          &:hover {
+            background-color: rgba(69, 55, 82, 0.411);
+          }
+        }
+      }
+    }
+}
+
+.push {
+    margin-left: 60rem;
+}
+  
+.content {
+    text-align: center;
+}
+  

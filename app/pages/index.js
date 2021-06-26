@@ -5,6 +5,7 @@ import Nav from '../components/Nav'
 import Showcase from '../components/Showcase'
 import SetGrid from '../components/SetGrid'
 import BannedGrid from '../components/BannedGrid'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
       <Showcase />
       <SetGrid />
       <BannedGrid />
+      <Footer />
+
+
     </>
   )
 }

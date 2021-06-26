@@ -1,0 +1,58 @@
+$text-color: rgba(211, 209, 209, 0.904);
+$card-bg: rgba(229, 227, 230, 0.993);
+$border-line: rgb(22, 20, 20);
+$break-line: rgba(100, 96, 96, 0.726) ;
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 1rem;
+    margin-top: 9rem;
+
+    .image_wrap {
+        border-radius: 2.1rem;
+        z-index: 1;
+        box-shadow: 11px 15px 19px 5px #000000;
+
+
+        img {
+            border-radius: 2rem;
+            height: auto;
+            width: 25rem;
+
+        }
+    }
+
+    .info {
+        height: 30rem;
+        width: 20rem;
+        border-radius: 1.5rem;
+        background-color: $card-bg;
+        margin-left: .6rem;
+        border-top: .3rem solid $border-line;
+        border-bottom: .3rem solid $border-line;
+
+        .heading {
+
+            border-bottom: .1rem solid $break-line;
+            width: 80%;
+            
+
+            h1 {
+                font-size: 1.2rem;
+                font-style: bold;
+                padding: .1rem 1rem;
+            }
+
+            h2 {
+                font-size: .9rem;
+                font-style: italic;
+                text-align: center;
+                padding: .1rem 1rem;
+            }
+        }
+    }
+}
+

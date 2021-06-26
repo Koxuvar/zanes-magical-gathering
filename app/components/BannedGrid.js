@@ -1,5 +1,6 @@
 import styles from '../styles/Bannedgrid.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 import Cauldron from '../public/img/banned/cauldron-familiar.jpg'
 import Escape from '../public/img/banned/escape-to-the-wilds.jpg'
 import Fires from '../public/img/banned/fires-of-invention.jpg'
@@ -18,14 +19,16 @@ const BannedGrid = () => {
                 <h3>click on any of the cards below to learn why</h3>
             </div>
             <div className={styles.grid}>
-                <div className={styles.image_wrap}><Image src={Cauldron} /></div>
-                <div className={styles.image_wrap}><Image src={Escape} /></div>
-                <div className={styles.image_wrap}><Image src={Fires} /></div>
-                <div className={styles.image_wrap}><Image src={Lucky} /></div>
-                <div className={styles.image_wrap}><Image src={Oko} /></div>
-                <div className={styles.image_wrap}><Image src={Omnath} /></div>
-                <div className={styles.image_wrap}><Image src={Once} /></div>
-                <div className={styles.image_wrap}><Image src={Uro} /></div>
+
+                <Link href='/CardDisplay'><div className={styles.image_wrap}><Image src={Cauldron} /></div></Link>
+                <Link href='/'><div className={styles.image_wrap}><Image src={Escape} /></div></Link>
+                <Link href='/'><div className={styles.image_wrap}><Image src={Fires} /></div></Link>
+                <Link href='/'><div className={styles.image_wrap}><Image src={Lucky} /></div></Link>
+                <Link href='/'><div className={styles.image_wrap}><Image src={Oko} /></div></Link>
+                <Link href='/'><div className={styles.image_wrap}><Image src={Omnath} /></div></Link>
+                <Link href='/'><div className={styles.image_wrap}><Image src={Once} /></div></Link>
+                <Link href='/'><div className={styles.image_wrap}><Image src={Uro} /></div></Link>
+                
             </div>
 
         </>

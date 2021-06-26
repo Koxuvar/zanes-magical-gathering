@@ -1,0 +1,52 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 85rem;
+    margin-left: 10rem;
+
+    .card {
+        
+        border-radius: 1rem;
+        background: linear-gradient(123deg, rgba(139, 134, 213, 0.192) 0%, rgba(165, 86, 132, 0.192) 81%);
+        color: rgb(241, 241, 241);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 22rem;
+        width: 90%;
+        padding: .5rem;
+        margin: 1rem;
+        -webkit-box-shadow: 8px 17px 18px 1px rgba(49, 48, 49, 0.8); 
+        box-shadow: 8px 17px 18px 1px rgba(0,0,0,0.8);
+
+        img {
+            border-radius: 4%;
+        }
+
+        .Setbtn {
+            margin: 1rem;
+            height: 2rem;
+            width: 12rem;
+            position: relative;
+            bottom: 1rem;
+            background: rgb(231, 210, 213);
+            outline: none;
+            border: none;
+            border-radius: .5rem;
+            transition: 300ms ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: 8px 17px 18px 1px rgba(0,0,0,0.8);
+            }
+        }
+
+        
+        
+    }
+
+    
+}

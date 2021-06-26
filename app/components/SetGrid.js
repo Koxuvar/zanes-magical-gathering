@@ -3,7 +3,7 @@ import Image from 'next/image'
 import StxImage from '../public/img/strix.jpg'
 import KalImage from '../public/img/kaldheim.jpg'
 import ZenImage from '../public/img/zendikar2.jpg'
-import CoreImage from '../public/img/core.jpg'
+import CoreImage from '../public/img/core2.jpg'
 import IkoImage from '../public/img/ikoria3.jpg'
 
 const SetGrid = () => {
@@ -30,7 +30,7 @@ const SetGrid = () => {
 
             <div className={styles.card}>
                 <Image width={380} height={220} src={CoreImage} />
-                <h2>Core Set 2020</h2>
+                <h2>Core Set 2021</h2>
                 <button className={styles.Setbtn}>view the set</button>
             </div>
 

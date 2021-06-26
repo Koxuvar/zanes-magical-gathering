@@ -1,3 +1,4 @@
+$text-color: rgba(211, 209, 209, 0.904);
 
 .container {
     display: grid;
@@ -11,7 +12,7 @@
         
         border-radius: 1rem;
         background: linear-gradient(123deg, rgba(139, 134, 213, 0.192) 0%, rgba(165, 86, 132, 0.192) 81%);
-        color: rgb(241, 241, 241);
+        color: $text-color;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -32,7 +33,8 @@
             width: 12rem;
             position: relative;
             bottom: 1rem;
-            background: rgb(231, 210, 213);
+            background: rgb(179, 107, 119);
+            color: $text-color;
             outline: none;
             border: none;
             border-radius: .5rem;

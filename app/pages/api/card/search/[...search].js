@@ -4,9 +4,9 @@ export default async function handler(req, res)
 {
     try
     {
-        const search = req.query;
-        console.log(search);
-        const data = await axios.get(`https://api.scryfall.com/cards/named?fuzzy=${search.search}`);
+        const {search} = req.query;
+        const searchCl = search[0].replace(/\s/g, '+');
+        const data = await axios.get(`https://api.scryfall.com/cards/named?fuzzy=${searchCl}`);
 
         if(!data)
         {

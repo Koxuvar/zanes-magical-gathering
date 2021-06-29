@@ -1,0 +1,22 @@
+$text-color: rgba(211, 209, 209, 0.904);
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100rem;
+    height: auto 0rem;
+    margin: 10rem 1rem;
+    
+
+    .sign_in_wrap {
+        color: $text-color;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 35rem;
+        width: 40rem;
+        border: rgba(240, 237, 237, 0.836) solid .2rem;
+        border-radius: 1rem;
+    }
+}

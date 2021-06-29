@@ -55,7 +55,7 @@ const Footer = () => {
     </ul>
     
     <div className={style.legal}>
-        <p>&copy; 2019 Something. All rights reserved.</p>
+        <p>&copy; 2021 blah blah blah. All rights reserved.</p>
         
         <div className={style.legal__links}>
         <span>Powered by <span className="heart">º</span> Scryfall</span>

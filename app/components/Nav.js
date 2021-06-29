@@ -16,10 +16,10 @@ const Nav = () => {
                     <Link href='/profile'>profile</Link>
                 </li>
                 <li className={style.push}>
-                    <Link href='signin'>sign in</Link>
+                    <Link href='/signin'>sign in</Link>
                 </li>
                 <li>
-                    <Link href='signin'>register</Link>
+                    <Link href='/register'>register</Link>
                 </li>
             </ul>
         </nav>

@@ -4,7 +4,8 @@ const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
-const apiRoutes = require("./routes/apiRoutes");
+const routes = require('./routes');
+// const apiRoutes = require("./routes/apiRoutes");
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
@@ -23,7 +24,7 @@ mongoose.connect(
 );
 
 // Use apiRoutes
-app.use("/api", apiRoutes);
+app.use(routes);
 
 // Define API routes before running
 app.get("*", function(req, res) {

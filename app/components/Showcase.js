@@ -65,14 +65,11 @@ const Showcase = () => {
             }
 
             setCard(res.data);
-        
+            console.log(card)
             {/* okay this is bullshit lol but it's working for the moment*/}
-
             let img = card.image_uris.normal
-            console.log(img)
             const imgHolder = document.getElementById('imgSet')
             imgHolder.src= img
-
         });
     }
 
@@ -86,9 +83,17 @@ const Showcase = () => {
                 <input className={style.search} type='text' placeholder='search for cards here...' value={search} onChange={handleInputChange} onKeyPress={handleSubmit}></input>
                 
                 <div className={style.img_wrap}>
-
-                    <img src='' id='imgSet'></img>
-                    <h2>{card.artist}</h2>
+                    <div>
+                        <img src='' id='imgSet'></img>
+                    </div>
+                    
+                    <div className='display_info'>
+                        <div><h2>{card.name}</h2></div>
+                        <div><h2>{card.type_line}</h2></div>
+                        <div><h2>{card.oracle_text}</h2></div>
+                        <hr/>
+                        <div><h2>{card.flavor_text}</h2></div>
+                    </div>
 
                 </div>
             </div>

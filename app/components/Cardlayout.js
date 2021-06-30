@@ -6,7 +6,7 @@ const Cardlayout = () => {
     return (
         <div className={styles.container}>
             
-            <div className={styles.image_wrap}>
+            {/* <div className={styles.image_wrap}>
                 <Image src={Cauldron} />
             </div>
 
@@ -27,7 +27,7 @@ const Cardlayout = () => {
 
                 
 
-            </div>
+            </div> */}
             
         </div>
     )

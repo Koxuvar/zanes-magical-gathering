@@ -1,4 +1,6 @@
 import style from '../styles/Showcase.module.scss'
+import layoutStyles from '../styles/Cardlayout.module.scss'
+import CardLayout from '../components/Cardlayout'
 import Image from 'next/image'
 import { useState, useEffect } from "react";
 import useDebounce from '../utils/debounceHook';
@@ -70,17 +72,16 @@ const Showcase = () => {
         });
     }
 
-
     return (
         <>
             <div className={style.container}>
                 <h1>Learning magic made easy</h1>
-                <h2>a card search and deck builder for the Standard format</h2>
+                <h3>a card search and deck builder for the Standard format</h3>
 
                 <input className={style.search} type='text' placeholder='search for cards here...' value={search} onChange={handleInputChange} onKeyPress={handleSubmit}></input>
                 
-                <div className={style.img_wrap}>
-                    <div>
+                <div className={style.data_wrap} id='user_display'>
+                    <div className={style.img_wrap}>
                         <img src={card != undefined ? photos : ''} id='imgSet'></img>
                     </div>
                     
@@ -88,7 +89,7 @@ const Showcase = () => {
                         <div><h2>{card.name}</h2></div>
                         <div><h2>{card.type_line}</h2></div>
                         <div><h2>{card.oracle_text}</h2></div>
-                        <hr/>
+                        <br/>
                         <div><h2>{card.flavor_text}</h2></div>
                     </div>
 

@@ -11,6 +11,7 @@ const Showcase = () => {
     const [search, setSearch] = useState([]);
     const [results, setResults] = useState([]);
     const [card, setCard] = useState([]);
+    const [photos, setPhotos] = useState([])
 
     const debouncedSearchTerm = useDebounce(search, 500);
 
@@ -31,6 +32,7 @@ const Showcase = () => {
                 }
 
                 setResults(res.data.data);
+                console.log(res.data.data)
             })
         }
     }, [debouncedSearchTerm]);
@@ -63,8 +65,17 @@ const Showcase = () => {
             }
 
             setCard(res.data);
+        
+            {/* okay this is bullshit lol but it's working for the moment*/}
+
+            let img = card.image_uris.normal
+            console.log(img)
+            const imgHolder = document.getElementById('imgSet')
+            imgHolder.src= img
+
         });
     }
+
 
     return (
         <>
@@ -74,10 +85,16 @@ const Showcase = () => {
 
                 <input className={style.search} type='text' placeholder='search for cards here...' value={search} onChange={handleInputChange} onKeyPress={handleSubmit}></input>
                 
+                <div className={style.img_wrap}>
 
+                    <img src='' id='imgSet'></img>
+                    <h2>{card.artist}</h2>
+
+                </div>
             </div>
             <div className={style.text_hold}>
                 <h2>below are the current legal standard sets</h2>
+                
             </div>
         </>
     )

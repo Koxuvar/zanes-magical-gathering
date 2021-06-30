@@ -14,6 +14,7 @@ const Showcase = () => {
     const [photos, setPhotos] = useState([])
 
     const debouncedSearchTerm = useDebounce(search, 500);
+    // const debouncedResutls = useDebounce(results, 500);
 
     useEffect(() => {
         if (!search)
@@ -32,7 +33,6 @@ const Showcase = () => {
                 }
 
                 setResults(res.data.data);
-                console.log(res.data.data)
             })
         }
     }, [debouncedSearchTerm]);
@@ -65,11 +65,7 @@ const Showcase = () => {
             }
 
             setCard(res.data);
-            console.log(card)
-            {/* okay this is bullshit lol but it's working for the moment*/}
-            let img = card.image_uris.normal
-            const imgHolder = document.getElementById('imgSet')
-            imgHolder.src= img
+            // console.log(card)
         });
     }
 
@@ -84,7 +80,7 @@ const Showcase = () => {
                 
                 <div className={style.img_wrap}>
                     <div>
-                        <img src='' id='imgSet'></img>
+                        <img src={typeof card == "object" ? card.image_uris.normal: ''} id='imgSet'></img>
                     </div>
                     
                     <div className='display_info'>

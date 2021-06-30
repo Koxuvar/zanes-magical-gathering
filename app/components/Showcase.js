@@ -70,8 +70,9 @@ const Showcase = () => {
 
             let img = card.image_uris.normal
             console.log(img)
-            const imgHolder = document.getElementById('imgHold')
+            const imgHolder = document.getElementById('imgSet')
             imgHolder.src= img
+
         });
     }
 
@@ -85,8 +86,10 @@ const Showcase = () => {
                 <input className={style.search} type='text' placeholder='search for cards here...' value={search} onChange={handleInputChange} onKeyPress={handleSubmit}></input>
                 
                 <div className={style.img_wrap}>
-                    <img src='' id='imgHold'></img>
+
+                    <img src='' id='imgSet'></img>
                     <h2>{card.artist}</h2>
+
                 </div>
             </div>
             <div className={style.text_hold}>

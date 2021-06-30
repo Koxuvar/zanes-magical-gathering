@@ -65,6 +65,7 @@ const Showcase = () => {
             }
 
             setCard(res.data);
+            setPhotos(res.data.image_uris.normal);
             // console.log(card)
         });
     }
@@ -80,7 +81,7 @@ const Showcase = () => {
                 
                 <div className={style.img_wrap}>
                     <div>
-                        <img src={typeof card == "object" ? card.image_uris.normal: ''} id='imgSet'></img>
+                        <img src={card != undefined ? photos : ''} id='imgSet'></img>
                     </div>
                     
                     <div className='display_info'>

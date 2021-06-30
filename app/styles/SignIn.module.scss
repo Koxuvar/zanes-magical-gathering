@@ -1,0 +1,23 @@
+$text-color: rgba(211, 209, 209, 0.904);
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100rem;
+    background-attachment: fixed;
+
+    .sign_in_wrap {
+        text-align: center;
+        color: $text-color;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        height: 30rem;
+        width: 45rem;
+        border: rgba(240, 238, 238, 0.589) solid .2rem;
+        border-radius: .6rem;
+        background: inherit;
+        
+    }
+}

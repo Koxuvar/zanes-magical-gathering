@@ -5,19 +5,18 @@ $text-color: rgba(211, 209, 209, 0.904);
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
-    width: 85rem;
-    margin-left: 10rem;
+    max-width: 120rem;
 
     .card {
         
-        border-radius: 1rem;
+        border-radius: 4%;
         background: linear-gradient(123deg, rgba(139, 134, 213, 0.192) 0%, rgba(165, 86, 132, 0.192) 81%);
         color: $text-color;
         align-items: center;
         justify-content: center;
         text-align: center;
         height: 22rem;
-        width: 90%;
+        width: 25rem;
         padding: .5rem;
         margin: 1rem;
         -webkit-box-shadow: 8px 17px 18px 1px rgba(49, 48, 49, 0.8); 

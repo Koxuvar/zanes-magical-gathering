@@ -2,30 +2,29 @@
     justify-content: center;
     align-items: center;
     width: 110rem;
+}
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
-        padding: 5rem;
-        margin: 1rem;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 6rem;
+    margin: 3rem;
+    max-width: 36rem;
 
-        .image_wrap {
+    .image_wrap {
 
-            img {
-                border-radius: 1rem;
-            }
-    
-            transition: 300ms ease-in-out;
-    
-            &:hover {
-                cursor: pointer;
-                box-shadow: 8px 17px 18px 1px rgba(0,0,0,0.8);
-            }
-    
+        img {
+            border-radius: 1rem;
         }
+
+        transition: 300ms ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 8px 17px 18px 1px rgba(0,0,0,0.8);
+        }
+
     }
-
-
 }
 

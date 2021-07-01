@@ -1,37 +1,25 @@
-$text-color: rgba(211, 209, 209, 0.904);
-
-.text_hold {
-    margin-top: 5rem;
-    text-align: center;
-    color: $text-color;
-    font-size: 1.5rem;
-
-    h3 {
-        font-style: italic;
-        font-size: 1.2rem;
-    }
+.container {
     
-}
-
-.grid {
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 5rem;
     margin: 1rem;
     gap: 1rem;
-
+    
     .image_wrap {
-
+    
         img {
             border-radius: 1rem;
         }
-
+    
         transition: 300ms ease-in-out;
-
+    
         &:hover {
             cursor: pointer;
             box-shadow: 8px 17px 18px 1px rgba(0,0,0,0.8);
         }
-
+    
     }
+    
 }

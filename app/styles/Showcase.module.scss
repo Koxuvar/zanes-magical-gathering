@@ -8,14 +8,15 @@ $text-color: rgba(211, 209, 209, 0.842);
     margin-top: 10rem;
     margin-bottom: 3rem;
     color: $text-color;
-    max-width: auto;
+    max-width: auto 0;
+    max-height: auto 0;
 
     h1 {
         font-size: 3rem;
         margin-bottom: -.5rem;
     }
 
-    h2 {
+    h3 {
         font-style: italic;
     }
 
@@ -29,16 +30,29 @@ $text-color: rgba(211, 209, 209, 0.842);
         padding: .5rem;
         width: 36rem;
         margin-top: 3rem;
-        margin-left: 15rem;
+        margin-left: 12.5rem;
     }
 
-    .img_wrap {
+    .data_wrap {
 
+        visibility: visible;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         align-items: center;
-        width: 60rem;
+        width: 62rem;
+        background: rgba(0, 0, 0, 0.493);
+        backdrop-filter: saturate(180%) blur(10px);
+        border-radius: 2rem;
+        margin-top: 2rem;
+
+        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+            .container {
+              -webkit-backdrop-filter: blur(10px);
+              backdrop-filter: blur(10px);
+            }
+          }
+        
         
         text-overflow: initial;
         
@@ -46,16 +60,17 @@ $text-color: rgba(211, 209, 209, 0.842);
         img {
             border-radius: 4.5rem;
             padding: 3rem;
+            height: auto;
+            width: 30rem;
+            
         }
 
         .display_info {
-            padding: 3rem;
-            background-color: lavender;
-
-            hr {
-                background-color: $text-color;
-                opacity: 0.2;
-            }
+            padding: 5rem;
+            margin-right: 2rem;
+            
+        
+            
         }
     }
     
@@ -68,6 +83,6 @@ $text-color: rgba(211, 209, 209, 0.842);
     font-size: 1.3rem;
     color: $text-color;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     
 }

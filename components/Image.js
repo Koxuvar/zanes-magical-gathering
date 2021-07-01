@@ -1,8 +1,10 @@
+import Image from 'next/image';
+
 const Image = (props) => {
     console.log(props)
     return (
         <div>
-            <img src={props.src}></img>
+            <Image src={props.src} alt={props.alt} width={props.width} height={props.height}></Image>
         </div>
     )
 }

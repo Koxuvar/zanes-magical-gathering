@@ -59,9 +59,10 @@ const Showcase = () => {
         API.searchCards(s)
         .then((res) =>
         {
-            if(res.data.status === 'error')
+            console.log(res);
+            if(res.data.object === 'error')
             {
-                throw new Error('API CALL ERROR: ' + res.data.message);
+               alert('Error: ' + res.data.details);
             }
 
             setCard(res.data);

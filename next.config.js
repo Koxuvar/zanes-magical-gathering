@@ -2,7 +2,7 @@ module.exports = {
   reactStrictMode: true,
 
   images: {
-    domains: ['scryfall.com']
+    domains: ['scryfall.com', 'c1.scryfall.com']
   }
 
 }

@@ -13,7 +13,7 @@ const Showcase = () => {
     const [search, setSearch] = useState([]);
     const [results, setResults] = useState([]);
     const [card, setCard] = useState([]);
-    const [photos, setPhotos] = useState([])
+    const [photos, setPhotos] = useState([''])
 
     const debouncedSearchTerm = useDebounce(search, 500);
     // const debouncedResutls = useDebounce(results, 500);
@@ -68,7 +68,7 @@ const Showcase = () => {
             }
 
             setCard(res.data);
-            setPhotos(res.data.image_uris.normal);
+            setPhotos(<Image src={res.data.image_uris.normal} alt='card pix' width='488' height='680'></Image>);
             // console.log(card)
         });
     }
@@ -83,7 +83,8 @@ const Showcase = () => {
                 
                 <div className={style.data_wrap} id='user_display'>
                     <div className={style.img_wrap}>
-                        <img src={card != undefined ? photos : ''} id='imgSet'></img>
+                        {/*<img src={card != undefined ? photos : ''} id='imgSet'></img> */}
+                        {photos}
                     </div>
                     
                     <div className='display_info'>

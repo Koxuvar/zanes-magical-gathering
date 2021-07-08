@@ -8,7 +8,7 @@ $text-color: rgba(211, 209, 209, 0.904);
     max-width: 100rem;
     background-attachment: fixed;
 
-    .sign_in_wrap {
+    .register_wrap {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
@@ -39,6 +39,9 @@ $text-color: rgba(211, 209, 209, 0.904);
                 outline: none;
             }
         }
-        
+    }
+
+    .hide {
+        display: none;
     }
 }

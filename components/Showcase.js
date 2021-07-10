@@ -68,7 +68,7 @@ const Showcase = () => {
 
             setCard(res.data);
             setPhotos(<Image src={res.data.image_uris.normal} alt='card pix' width='488' height='680'></Image>);
-            // console.log(card)
+            console.log(card)
         });
     }
 

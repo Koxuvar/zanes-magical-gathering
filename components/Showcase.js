@@ -7,7 +7,6 @@ import useDebounce from '../utils/debounceHook';
 import API from '../utils/API';
 
 
-
 const Showcase = () => {
 
     const [search, setSearch] = useState([]);

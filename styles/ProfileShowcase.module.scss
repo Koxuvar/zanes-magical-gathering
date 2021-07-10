@@ -1,0 +1,53 @@
+$text-color: rgba(211, 209, 209, 0.842);
+
+.container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto 0;
+    padding: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    color: $text-color;
+
+    .img_wrap {
+
+        
+
+        img {
+            border-radius: 1.5rem;
+        }
+
+    }
+
+    .img_wrap_layer {
+        position: relative;
+        bottom: 21rem;
+
+        img {
+            border-radius: 1.5rem;
+        }
+    }
+
+    .img_wrap_layer_two {
+        position: relative;
+        bottom: 42rem;
+
+        img {
+            border-radius: 1.5rem;
+        }
+    }
+    
+    .img_wrap_layer_three {
+        position: relative;
+        bottom: 24rem;
+
+        img {
+            border-radius: 1.5rem;
+        }
+    }
+}
+

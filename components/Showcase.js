@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useState, useEffect } from "react";
 import useDebounce from '../utils/debounceHook';
 import API from '../utils/API';
+import missing from '../public/img/missing.jpg';
 
 
 const Showcase = () => {
@@ -61,9 +62,11 @@ const Showcase = () => {
         .then((res) =>
         {
             console.log(res);
-            if(res.data.object === 'error')
+            if(res == undefined)
             {
-               alert('Error: ' + res.data.details);
+               setCard({name: 'No Results Found!', type_line: '', oracle_text: '', flavor_text: ''});
+               setPhotos(<Image src={missing} alt='card pix' width='488' height='680'></Image>)
+               return;
             }
 
             setCard(res.data);

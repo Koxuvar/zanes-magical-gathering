@@ -5,33 +5,34 @@ import style from '../styles/GameDisplay.module.scss';
 const GameDisplay = () =>
 {
     const [counters, setCounters] = useState([]);
-    const [a, setA] = useState([]);
+    const [a, setA] = useState(0);
+    
 
     useEffect(() =>
     {
-        const LifeCounter = <Counter key='1' id='1' close={removeCounter}/>;
+        const LifeCounter = <Counter key={a} id='1' close={() => removeCounter(a)}/>;
         setCounters([LifeCounter]);
-        setA(1);
-        console.log(counters, a);
+        setA(prev => prev+1);
     },[]);
 
     const addCounter = () =>
     {
-        setA(parseInt(a) + 1);
-        const newCounter = <Counter key={a} id={a} close={removeCounter}/>;
+        setA(prev => prev+1);
+        const newCounter = <Counter key={a} id={a} close={() => removeCounter(a)}/>;
 
-        setCounters([...counters, newCounter]);
+        setCounters(prev => [...prev, newCounter]);
     }
 
-    const removeCounter = (event) =>
+    const removeCounter = (num) =>
     {
-        console.log(event);
-        console.log(counters);
+        console.log(num);
+        setCounters(prev => prev.filter(e => e.key != num));
     }
 
     return(
         <>
             <div className={style.counterHolder}>
+            
                 {counters}
             </div>
             <button className={style.plus} onClick={addCounter}></button>

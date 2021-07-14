@@ -74,7 +74,7 @@ const Showcase = () => {
 
                 var keys = Object.keys(missingCards);
                 let cardImage = missingCards[keys[ keys.length * Math.random() << 0]];
-                setCard({name: 'No Results Found!', type_line: '', oracle_text: '', flavor_text: ''});
+                setCard({name: 'No Results Found!', type_line: 'Heres a joke card instead!', oracle_text: '', flavor_text: ''});
                 setPhotos(<Image src={cardImage.default.src} alt='card pix' width='488' height='680'></Image>)
                 return;
             }

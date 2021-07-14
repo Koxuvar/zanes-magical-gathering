@@ -1,0 +1,64 @@
+$text-color: rgba(211, 209, 209, 0.904);
+$card-bg: rgba(229, 227, 230, 0.993);
+
+.container {
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    margin: 1rem;
+    margin-top: 9rem;
+
+    .username {
+        display: flex;
+        justify-content: right;
+        align-self: flex-start;
+        height: 2rem;
+        width: 10rem;
+        background-color: $card-bg;
+
+    }
+    .games {
+        display: flex;
+        justify-content: right;
+        align-self: flex-start;
+        height: 2rem;
+        width: 10rem;
+        background-color: $card-bg;
+
+    }
+    .last {
+        display: flex;
+        justify-content: right;
+        align-self: flex-start;
+        height: 2rem;
+        width: 10rem;
+        background-color: $card-bg;
+
+    }
+    .info {
+        height: 20rem;
+        width: 15rem;
+        border-radius: 50%;
+        background-color: $card-bg;
+        margin-left: .6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .heading {
+            width: 80%;
+            
+
+
+            h2 {
+                font-size: .9rem;
+                font-style: bold;
+                text-align: center;
+                padding: .1rem 1rem;
+            }
+        }
+    }
+}
+

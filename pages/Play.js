@@ -9,7 +9,7 @@ const Play = () =>
         <>
             <Nav />
             <GameDisplay />
-            <Footer />
+            
         </>
     )
 }

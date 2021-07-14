@@ -15,6 +15,9 @@ const Nav = () => {
                 <li>
                     <Link href='/Profile'>profile</Link>
                 </li>
+                <li>
+                    <Link href='/Play'>play</Link>
+                </li>
                 {/* <li className={style.push}>
                     <Link href='/SignIn'>sign in</Link>
                 </li>

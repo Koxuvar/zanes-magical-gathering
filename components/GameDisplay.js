@@ -34,6 +34,7 @@ const GameDisplay = () =>
             <div className={style.counterHolder}>
             
                 {counters}
+                
             </div>
             <button className={style.plus} onClick={addCounter}></button>
         </>

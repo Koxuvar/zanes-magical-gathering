@@ -10,7 +10,7 @@ const GameDisplay = () =>
 
     useEffect(() =>
     {
-        const LifeCounter = <Counter key={a} id='1' close={() => removeCounter(a)} count='2'/>;
+        const LifeCounter = <Counter key={a} id='1' close={() => removeCounter(a)} count='20'/>;
         setCounters([LifeCounter]);
         setA(prev => prev+1);
     },[]);

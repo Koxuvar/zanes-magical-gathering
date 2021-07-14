@@ -8,7 +8,7 @@ const Profile = () => {
         <>
             <Nav />
             <Showcase />
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

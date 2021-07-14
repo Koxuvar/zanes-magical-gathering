@@ -88,8 +88,13 @@ const Showcase = () => {
     return (
         <>
             <div className={style.container}>
-                <h1>Learning magic made easy</h1>
-                <h3>a card search and deck builder for the Standard format</h3>
+
+                <div className={style.title_hold}>
+                    <h1>turn one</h1>
+                    <h2>a search enging and game companion for Magic: The Gathering</h2>
+                    
+                </div>
+                
 
                 <input className={style.search} type='text' placeholder='search for cards here...' value={search} onChange={handleInputChange} onKeyPress={handleSubmit}></input>
                 
@@ -99,20 +104,18 @@ const Showcase = () => {
                         {photos}
                     </div>
                     
-                    <div className='display_info'>
-                        <div><h2>{card.name}</h2></div>
-                        <div><h2>{card.type_line}</h2></div>
-                        <div><h2>{card.oracle_text}</h2></div>
-                        <br/>
-                        <div><h2>{card.flavor_text}</h2></div>
+                    <div className={style.display_info}>
+                        <h2>{card.name}</h2>
+                        <h2>{card.type_line}</h2>
+                        <h2>{card.oracle_text}</h2>
                     </div>
 
                 </div>
             </div>
-            <div className={style.text_hold}>
+            {/* <div className={style.text_hold}>
                 <h2>below are the current legal standard sets</h2>
                 
-            </div>
+            </div> */}
         </>
     )
 }

@@ -3,7 +3,7 @@ import style from '../styles/Counter.module.scss'
 
 const Counter = (props) =>
 {
-    const [count, setCount] = useState([0]);
+    const [count, setCount] = useState([props.count || 0]);
     const [name, setName] = useState(['Counter']);
 
     const increment = () =>

@@ -91,6 +91,7 @@ const Showcase = () => {
 
                 <div className={style.title_hold}>
                     <h1>turn one</h1>
+                    <h2>a search enging and game companion for Magic: The Gathering</h2>
                     
                 </div>
                 
@@ -103,10 +104,10 @@ const Showcase = () => {
                         {photos}
                     </div>
                     
-                    <div className='display_info'>
-                        <div><h2>{card.name}</h2></div>
-                        <div><h2>{card.type_line}</h2></div>
-                        <div><h2>{card.oracle_text}</h2></div>
+                    <div className={style.display_info}>
+                        <h2>{card.name}</h2>
+                        <h2>{card.type_line}</h2>
+                        <h2>{card.oracle_text}</h2>
                     </div>
 
                 </div>

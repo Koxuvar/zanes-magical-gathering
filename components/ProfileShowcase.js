@@ -1,47 +1,65 @@
 import styles from '../styles/ProfileShowcase.module.scss'
 import Image from 'next/image'
+import proPic from '../public/img/dummy_propic.png'
 
-{/* dummy data photos below */}
-import delta from '../public/img/dummydeck/delta.jpg'
-import usea from '../public/img/dummydeck/usea.jpg'
-import petal from '../public/img/dummydeck/petal.jpg'
+
 
 const ProfileShowcase = () => {
     return (
         <>
-          <div className={styles.container}>
+          
+          <div className={styles.top_container}>
 
-              {/* lands */}
-              <div className={styles.lands}>
-                  <h2>lands</h2>
-                <div className={styles.img_wrap}>
-                    <Image src={delta} />
-                </div>
-                <div className={styles.img_wrap_layer}>
-                    <Image src={delta} />
-                </div>
-                <div className={styles.img_wrap_layer_two}>
-                    <Image src={usea} />
-                </div>
-              </div>
+            <div className={styles.img_wrap}>
+                <Image src={proPic} />
+            </div>
 
-              {/* 0cmc */}
-               <div className={styles.zero}>
-                   <h2>zero</h2>
-                   <div className={styles.img_wrap_layer_three}>
-                       <Image src={petal} />
-                   </div>
-               </div> 
-              {/* 1cmc */}
-              {/* 2cmc */}
-              {/* 3cmc */}
-              {/* 4cmc */}
-              {/* 5cmc */}
-              {/* 6cmc */}
-              {/* 7cmc */}
-              {/* 8cmc */}
-              
+            <div className={styles.display_info}>
+
+                <div className={styles.data_card}>
+                <h1>username</h1>
+                <h2>zane</h2>
+                </div>
+
+                <div className={styles.data_card}>
+                    <h1>games played</h1>
+                    <h2>2000</h2>
+                </div>
+
+                <div className={styles.data_card}>
+                    <h1>last login</h1>
+                    <h2>07.14.2021</h2>
+                </div>
+            </div>
+
+            <div className={styles.display_data}>
+
+                <div className={styles.deck_name}>
+
+                    <h1>U/R Blitz</h1>
+                    <h1>U/W Miracles</h1>
+                    <h1>Esper Stoneblade</h1>
+                    <h1>Bant Control</h1>
+                    
+                </div>
+                
+                <div className={styles.win_pct}>
+                    <h1>58.5%</h1>
+                    <h1>55.7%</h1>
+                    <h1>59.7%</h1>
+                    <h1>61.8%</h1>
+                </div>
+                
+            </div>
+
+            <div className={styles.overall}>
+
+                <h1>overall win percentage: 58.9%</h1>
+                <h1>current win streak: 7</h1>
+            </div>
+
           </div>
+          
         </>
     )
 }

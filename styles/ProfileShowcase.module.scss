@@ -1,53 +1,84 @@
-$text-color: rgba(211, 209, 209, 0.842);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
-.container {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(5, 1fr);
+
+$text-color: rgba(211, 209, 209, 0.842);
+$border_color: rgba(199, 193, 201, 0.342);
+
+.top_container {
+    font-family: Oxygen;
+    align-items: center;    
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto 0;
-    padding: 2rem;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
+    margin: auto;
+    width: 23rem;
+    height: auto 0;
     color: $text-color;
 
     .img_wrap {
 
+        margin-left: 4rem;
         
 
         img {
-            border-radius: 1.5rem;
+            border-radius: 6rem;
+            height: 18rem;
+            width: 15rem;
+        }
+    }
+
+    .display_info {
+        font-family: Poppins;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        h1 {
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            font-family: Merriweather;
+            font-size: 1rem;
+        }
+
+        .data_card {
+            text-align: center;
+            border: rgba(199, 193, 201, 0.342) .2rem solid;
+            border-radius: .2rem;
+            border-bottom: none;
+            border-left: none;
+            margin: .2rem;
+            padding: .3rem;
+        }
+    }
+
+    .display_data {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.5rem;
+        height: auto;
+        border: $border_color .2rem solid;
+        border-radius: .4rem;
+        border-bottom: none;
+        
+
+        .deck_name {
+            font-family: Poppins;
+        }
+
+        .win_pct {
+            font-family: Poppins;
         }
 
     }
 
-    .img_wrap_layer {
+    .overall {
+        text-align: center;
+        display: block;
         position: relative;
-        bottom: 21rem;
-
-        img {
-            border-radius: 1.5rem;
-        }
+        width: auto;
     }
 
-    .img_wrap_layer_two {
-        position: relative;
-        bottom: 42rem;
 
-        img {
-            border-radius: 1.5rem;
-        }
-    }
-    
-    .img_wrap_layer_three {
-        position: relative;
-        bottom: 24rem;
-
-        img {
-            border-radius: 1.5rem;
-        }
-    }
 }
-

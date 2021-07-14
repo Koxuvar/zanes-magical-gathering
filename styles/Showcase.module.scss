@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 $text-color: rgb(219, 216, 221);
 
@@ -12,28 +13,39 @@ $text-color: rgb(219, 216, 221);
     width: 20rem;
     height: auto 0;
     position: relative;
-    top: 1.5rem;
     color: $text-color;
     
     .title_hold {
 
         text-align: center;
-        margin-top: 2rem;
-        font-family: Merriweather;
-        word-spacing: -.2rem;
+        font-family: Poppins;
+        position: relative;
+        bottom: 2rem;
 
         h1 {
-            font-size: 3rem;
+            font-size: 4rem;
             display: inline;
         }
+
+        h2 {
+            font-family: Merriweather;
+            font-style: italic;
+            display: block;
+            position: relative;
+            bottom: 1.5rem;
+        }
+
+
     }
 
     .search {
-        border-radius: 1rem;
+        display: block;
+        position: relative;
+        bottom: 2rem;
+        border-radius: .4rem;
         outline: none;
         border: none;
         width: 20rem;
-        margin-top: 1rem;
         margin-bottom: 1rem;
         height: 2rem;
         font-size: 1.5rem;
@@ -60,8 +72,18 @@ $text-color: rgb(219, 216, 221);
 
         .display_info {
             
+            margin-top: 1rem;
+            margin-bottom: 1rem;
             align-items: center;
             justify-content: center;
+            line-height: 1rem;
+            border: rgba(99, 60, 122, 0.733) .2rem solid;
+            border-radius: .4rem;
+
+            h2 {
+                margin: .5rem;
+                padding: .2rem;
+            }
         }
     }
 }

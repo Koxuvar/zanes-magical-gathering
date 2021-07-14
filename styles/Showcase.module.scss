@@ -1,88 +1,67 @@
-$text-color: rgba(211, 209, 209, 0.842);
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+$text-color: rgb(219, 216, 221);
 
 .container {
-    display: grid;
+
+    font-family: Oxygen;
+    align-items: center;    
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 10rem;
-    margin-bottom: 3rem;
+    margin: auto;
+    width: 20rem;
+    height: auto 0;
+    position: relative;
+    top: 1.5rem;
     color: $text-color;
-    max-width: auto 0;
-    max-height: auto 0;
+    
+    .title_hold {
 
-    h1 {
-        font-size: 3rem;
-        margin-bottom: -.5rem;
-    }
+        text-align: center;
+        margin-top: 2rem;
+        font-family: Merriweather;
+        word-spacing: -.2rem;
 
-    h3 {
-        font-style: italic;
+        h1 {
+            font-size: 3rem;
+            display: inline;
+        }
     }
 
     .search {
-        height: 2.5rem;
-        border-radius: .8rem;
+        border-radius: 1rem;
         outline: none;
         border: none;
-        background-color: rgb(199, 199, 199);
+        width: 20rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        height: 2rem;
         font-size: 1.5rem;
         padding: .5rem;
-        width: 36rem;
-        margin-top: 3rem;
-        margin-left: 12.5rem;
+        background-color: rgba(229, 219, 233, 0.582);
+        color: rgba(109, 51, 109, 0.801);
+
+        &:focus {
+            outline: none;
+            border: none;
+        }
     }
 
     .data_wrap {
-
-        visibility: visible;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-        align-items: center;
-        width: 62rem;
-        background: rgba(0, 0, 0, 0.493);
-        backdrop-filter: saturate(180%) blur(10px);
-        border-radius: 2rem;
-        margin-top: 2rem;
-
-        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-            .container {
-              -webkit-backdrop-filter: blur(10px);
-              backdrop-filter: blur(10px);
-            }
-          }
         
-        
-        text-overflow: initial;
-        
+        text-align: center;
 
-        img {
-            border-radius: 4.5rem;
-            padding: 3rem;
-            height: auto;
-            width: 30rem;
+        .img_wrap {
             
+            img {
+                border-radius: .9rem;
+            }
         }
 
         .display_info {
-            padding: 5rem;
-            margin-right: 2rem;
             
-        
-            
+            align-items: center;
+            justify-content: center;
         }
     }
-    
-}
-
-
-
-
-.text_hold {
-    font-size: 1.3rem;
-    color: $text-color;
-    text-align: center;
-    margin-bottom: 2rem;
-    
 }

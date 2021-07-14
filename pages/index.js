@@ -15,9 +15,9 @@ export default function Home() {
       </Head>
       <Nav />
       <Showcase />
-      <SetGrid />
+      {/* <SetGrid />
       <BannedGrid />
-      <Footer />
+      <Footer /> */}
 
 
     </>

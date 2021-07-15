@@ -18,7 +18,11 @@ let user = new Schema(
         since: {
             type: Date,
             default: Date.now
-        }
+        },
+        decks: {
+            type: Array,
+            required: false
+        },
     }
 );
 

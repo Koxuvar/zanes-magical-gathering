@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 $text-color: rgba(211, 209, 209, 0.904);
+$soft-white: rgba(255, 255, 255, 0.911);
 
 .container {
 
@@ -15,24 +17,34 @@ $text-color: rgba(211, 209, 209, 0.904);
         align-items: center;
         justify-content: center;
         color: $text-color;
-        margin-top: 10rem;
+        margin-top: 1rem;
         margin-bottom: 10rem;
         height: 30rem;
         max-width: 45rem;
         min-width: 30rem;
-        border: rgba(240, 238, 238, 0.589) solid .2rem;
+        border: $soft-white solid .2rem;
         border-radius: .6rem;
         background: inherit;
 
+        h1 {
+            font-family: Poppins;
+            font-size: 3rem;
+            color: $soft-white;
+        }
+
         input {
             display: block;
+            position: relative;
+            bottom: 4rem;
             margin: 0 auto;
             padding: .2rem;
             width: 20rem;
             background: none;
+            border: .12rem $text-color solid;
             border-top: none;
             border-right: none;
-            color: $text-color;
+            border-left: none;
+            color: $soft-white;
             font-size: 1.5rem;
 
             &:focus {

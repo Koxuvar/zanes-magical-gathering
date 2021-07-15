@@ -10,7 +10,7 @@ const Register = () => {
                 <div className={styles.container}>
 
                     <div className={styles.register_wrap}>
-                        <h1>welcome</h1>
+                        <h1>welcome!</h1>
                         <input id='userName' placeholder='username'></input>
                         <input id='userPassword' placeholder='password'></input>
                         <input id='userPasswordCheck' placeholder='reenter password'></input>

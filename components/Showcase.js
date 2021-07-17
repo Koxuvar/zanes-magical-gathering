@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useState, useEffect } from "react";
 import useDebounce from '../utils/debounceHook';
 import API from '../utils/API';
+import Autocomplete from './Autocomplete';
 
 function importAll(r) 
 {
@@ -97,6 +98,10 @@ const Showcase = () => {
                 
 
                 <input className={style.search} type='text' placeholder='search for cards here...' value={search} onChange={handleInputChange} onKeyPress={handleSubmit}></input>
+
+                <Autocomplete
+                suggestions={results}
+                />
                 
                 <div className={style.data_wrap} id='user_display'>
                     <div className={style.img_wrap}>

@@ -1,4 +1,20 @@
-import { useState, useEffect } from "react";
-import API from "../utils/API";
-import useDebounce from "../utils/debounceHook";
- 
+import React from 'react';
+
+
+const Autocomplete = (props) =>
+{
+    
+    return(
+        <>
+            <div>
+                <ul>
+                    {props.suggestions.map((e) => (
+                        <li key={e}>{e}</li>
+                    ))}
+                </ul>
+            </div>
+        </>
+    );
+}
+
+export default Autocomplete;

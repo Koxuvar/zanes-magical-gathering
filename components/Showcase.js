@@ -1,10 +1,9 @@
 import style from '../styles/Showcase.module.scss'
-import layoutStyles from '../styles/Cardlayout.module.scss'
-import CardLayout from '../components/Cardlayout'
 import Image from 'next/image'
 import { useState, useEffect } from "react";
 import useDebounce from '../utils/debounceHook';
 import API from '../utils/API';
+
 
 function importAll(r) 
 {
@@ -91,7 +90,7 @@ const Showcase = () => {
 
                 <div className={style.title_hold}>
                     <h1>turn one</h1>
-                    <h2>a search enging and game companion for Magic: The Gathering</h2>
+                    <h2>a search engine and game companion for Magic: The Gathering</h2>
                     
                 </div>
                 

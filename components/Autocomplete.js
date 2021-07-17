@@ -1,18 +1,13 @@
-import React from 'react';
-
+import style from '../styles/AutoComplete.module.scss'
 
 const Autocomplete = (props) =>
 {
     
     return(
         <>
-            <div>
-                <ul>
-                    {props.suggestions.map((e) => (
-                        <li key={e}>{e}</li>
-                    ))}
-                </ul>
-            </div>
+            {props.suggestions.map((e) => (
+                <button className={style.btn} key={e}>{e}</button>
+            ))}
         </>
     );
 }

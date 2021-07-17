@@ -57,6 +57,13 @@ $text-color: rgb(219, 216, 221);
         }
     }
 
+    .btn_wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
     .data_wrap {
         
         margin-top: 3rem;

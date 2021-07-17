@@ -98,9 +98,10 @@ const Showcase = () => {
 
                 <input className={style.search} type='text' placeholder='search for cards here...' value={search} onChange={handleInputChange} onKeyPress={handleSubmit}></input>
 
-                <Autocomplete
-                suggestions={results}
-                />
+                <div className={style.btn_wrap}>
+                    <Autocomplete suggestions={results} />
+                </div>
+                
                 
                 <div className={style.data_wrap} id='user_display'>
                     <div className={style.img_wrap}>

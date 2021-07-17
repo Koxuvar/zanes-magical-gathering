@@ -19,8 +19,7 @@ $text-color: rgb(219, 216, 221);
 
         text-align: center;
         font-family: Poppins;
-        position: relative;
-        top: 5rem;
+        margin-top: 12rem;
 
         h1 {
             font-size: 4rem;
@@ -40,8 +39,7 @@ $text-color: rgb(219, 216, 221);
 
     .search {
         display: block;
-        position: relative;
-        top: 5rem;
+        margin-top: 1rem;
         border-radius: .4rem;
         outline: none;
         border: none;
@@ -61,8 +59,7 @@ $text-color: rgb(219, 216, 221);
 
     .data_wrap {
         
-        position: relative;
-        top: 5rem;
+        margin-top: 3rem;
         text-align: center;
 
         .img_wrap {
@@ -75,11 +72,11 @@ $text-color: rgb(219, 216, 221);
         .display_info {
             
             margin-top: 1rem;
-            margin-bottom: 1rem;
+            margin-bottom: 9rem;
             align-items: center;
             justify-content: center;
             line-height: 1rem;
-            border: rgba(99, 60, 122, 0.733) .2rem solid;
+            border: rgba(106, 86, 117, 0.39) .2rem solid;
             border-radius: .4rem;
 
             h2 {

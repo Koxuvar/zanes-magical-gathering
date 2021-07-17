@@ -140,7 +140,11 @@ $menu-speed: 0.75s;
 }
 
 .menu_wrap .menu > div > div > ul > li > a {
-  color: inherit;
+  color: rgb(245, 235, 236);
   text-decoration: none;
   transition: color 0.4s ease;
+
+  &:hover {
+    color: rgb(184, 95, 169);
+  }
 }

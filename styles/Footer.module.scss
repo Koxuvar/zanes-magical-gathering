@@ -4,7 +4,8 @@
     padding: 30px 30px 20px 30px;
     color: #2f2f2f;
     background-color: rgb(124, 94, 119);
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #b16cad2d;
+    margin-top: 16rem;
 }
   
 .footer > * {
@@ -101,26 +102,26 @@
     color: #2f2f2f;
 }
   
-@media screen and (min-width: 24.375em) {
-    .legal .legal__links {
-      margin-left: auto;
-    }
-}
+ @media screen and (min-width: 24.375em) {
+     .legal .legal__links {
+       margin-left: auto;
+     }
+ }
   
-@media screen and (min-width: 40.375em) {
-    .footer__nav > * {
-      flex: 1;
-    }
+ @media screen and (min-width: 40.375em) {
+     .footer__nav > * {
+       flex: 1;
+     }
     
-    .nav__item--extra {
-      flex-grow: 2;
-    }
+     .nav__item--extra {
+       flex-grow: 2;
+     }
     
-    .footer__addr {
-      flex: 1 0px;
-    }
+     .footer__addr {
+       flex: 1 0px;
+     }
     
-    .footer__nav {
-      flex: 2 0px;
-    }
-}
+     .footer__nav {
+       flex: 2 0px;
+     }
+ }

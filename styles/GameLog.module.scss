@@ -1,0 +1,87 @@
+$txt_clr: rgb(237, 235, 238);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.container {
+    position: relative;
+    top: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 27rem;
+    height: 25rem;
+    color: $txt_clr;
+
+    .title {
+        font-size: 5rem;
+        font-family: Poppins;
+    }
+
+    .quill {
+        height: 25rem;
+    }
+}
+
+.btn_hold {
+    
+    
+
+    .btn {
+        font-family: Poppins;
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%, -50%);
+        color: $txt_clr;
+        background-color: rgb(65, 10, 65);
+        text-decoration: none;
+        font-size: 2em;
+        display: inline-block;
+        padding: 0.5em 2em;
+        border: 2px solid #b8a3b6;
+        transition: 0.02s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 100%;
+            bottom: 0;
+            background: #c389d1;
+            transition: 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+            z-index: -1;
+        }
+        &::after {
+            content: "";
+            display: inline-block;
+            background-image: url("https://image.flaticon.com/icons/png/128/109/109617.png");
+            color: pink;
+            position: absolute;
+            top: 0;
+            left: calc(100% - 3em);
+            right: 3em;
+            bottom: 0;
+            background-size: 1.5em;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: right 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+        }
+        &:hover {
+            padding: 0.5em 3.5em 0.5em 0.5em;
+            &::before {
+                left: calc(100% - 3em);
+                right: 0;
+                transition: 0.3s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+            }
+            &::after {
+                right: 0;
+                transition: right 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+            }
+        }
+    }
+}

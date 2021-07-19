@@ -8,6 +8,8 @@ const QuillNoSSRWrapper = dynamic(import('react-quill'), {
 	loading: () => <p>Loading ...</p>,
 })
 
+QuillNoSSRWrapper.displayName = 'QuillNoSSRWrapper'
+
 const Logs = () => {
     return (
         <>

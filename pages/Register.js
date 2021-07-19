@@ -6,6 +6,8 @@ import {useState} from 'react';
 import useUser from '../lib/useUser';
 import fetchJson from '../lib/fetchJson';
 
+import Link from 'next/link';
+
 const Register = () => {
 
     const {mutateUser} = useUser({
@@ -68,6 +70,9 @@ const Register = () => {
                         <button type='submit'>Register</button>
                     </form>
                 </div>
+
+                <Link href='/SignIn'>meant to sign in?</Link>
+
             <Footer />
         </>
     )

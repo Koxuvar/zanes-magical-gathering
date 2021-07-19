@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import {useState} from 'react';
 import useUser from '../lib/useUser';
 import fetchJson from '../lib/fetchJson';
+import Link from 'next/link';
 
 const SignIn = () => {
 
@@ -51,8 +52,8 @@ const SignIn = () => {
                     {errorMsg && <p className="error">{errorMsg}</p>}
                     <button type='submit' >Sign In</button>
                 </form>
-
             </div>
+            <Link href='/Register'>need to register?</Link>
             <Footer />
         </>
     )

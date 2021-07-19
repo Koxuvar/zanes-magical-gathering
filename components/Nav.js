@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import style from '../styles/Nav.module.scss'
 import useUser from '../lib/useUser';
+import router from 'next/router';
+import fetchJson from '../lib/fetchJson';
 
 const Nav = () => {
     const { user, mutateUser } = useUser();
@@ -31,7 +33,7 @@ const Nav = () => {
                                     <Link href='/Logs'>game log</Link>
                                 </li>
                                 <li>
-                                    <Link href='/SignIn'>sign in</Link>
+                                    <Link href='/SignIn'>sign in/register</Link>
                                 </li>
                                 
                             </ul>
@@ -40,7 +42,19 @@ const Nav = () => {
                 </div>
             </div>
 
-            {user?.isLoggedIn && <button className={style.logout} href='/api/logout'>Logout</button>}
+            {user?.isLoggedIn && 
+            <button 
+                className={style.logout} 
+                href='/api/logout'
+                onClick={async (e) =>
+                {
+                    e.preventDefault();
+                    mutateUser(
+                        await fetchJson('/api/logout', {method: 'POST'}),
+                        false
+                    )
+                    router.push('/');
+                }}>Logout</button>}
 
             
         </nav>

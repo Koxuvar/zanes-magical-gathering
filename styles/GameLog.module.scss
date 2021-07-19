@@ -1,18 +1,21 @@
 $txt_clr: rgb(237, 235, 238);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+
 .container {
     position: relative;
-    top: 3rem;
+    top: 12rem;
     align-items: center;
     justify-content: center;
     margin: auto;
+    margin-bottom: 5rem;
     width: 27rem;
     height: 25rem;
     color: $txt_clr;
 
     .title {
-        font-size: 5rem;
+        text-align: center;
+        font-size: 3rem;
         font-family: Poppins;
     }
 
@@ -21,15 +24,18 @@ $txt_clr: rgb(237, 235, 238);
     }
 }
 
-.btn_hold {
-    
-    
 
+
+.btn_hold {
+
+    margin-bottom: 4rem;
+    
     .btn {
         font-family: Poppins;
         position: absolute;
         left: 50%;
-        top: 80%;
+        top: 162.5%;
+        
         transform: translate(-50%, -50%);
         color: $txt_clr;
         background-color: rgb(65, 10, 65);
@@ -38,6 +44,7 @@ $txt_clr: rgb(237, 235, 238);
         display: inline-block;
         padding: 0.5em 2em;
         border: 2px solid #b8a3b6;
+        border-radius: .4rem;
         transition: 0.02s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
 
         &:hover {

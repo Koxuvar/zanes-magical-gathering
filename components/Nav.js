@@ -29,11 +29,11 @@ const Nav = () => {
                                 <li>
                                     <Link href='/Play'>play</Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link href='/Logs'>game log</Link>
-                                </li>
+                                </li> */}
                                 <li>
-                                    <Link href='/SignIn'>sign in/register</Link>
+                                    <Link href='/SignIn'>sign in</Link>
                                 </li>
                                 
                             </ul>

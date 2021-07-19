@@ -36,7 +36,7 @@ const GameDisplay = () =>
                 {counters}
                 
             </div>
-            <button className={style.plus} onClick={addCounter}></button>
+            {/* <button className={style.plus} onClick={addCounter}></button> */}
         </>
     )
 }

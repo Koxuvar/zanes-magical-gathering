@@ -5,7 +5,7 @@ import style from '../styles/GameLog.module.scss'
 
 const QuillNoSSRWrapper = dynamic(import('react-quill'), {	
 	ssr: false,
-	loading: () => <p>Loading ...</p>,
+	
 })
 
 QuillNoSSRWrapper.displayName = 'QuillNoSSRWrapper'
@@ -23,10 +23,7 @@ const Logs = () => {
             <div className={style.btn_hold}>
                 <button className={style.btn}>save game</button>
             </div>
-            
-            
 
-            
         </>
     )
 }

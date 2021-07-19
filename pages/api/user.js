@@ -1,41 +1,24 @@
-import connectDB from "../../utils/mongodb";
-import User from "../../models/user";
+import withSession from '../../lib/session';
 
-const bcrypt = require('bcrypt');
-
-const handler = async(req, res) =>
+export default withSession(async (req, res) =>
 {
-    if (req.method == 'POST')
-    {
-        const {name, email, password} = req.body;
-        if(name && email && password)
-        {
-            try
-            {
-                let passwordHash = await bcrypt.hash(password, 10);
-                let user = new User({
-                    name,
-                    email,
-                    password: passwordHash
-                });
+    const user = req.session.get('user');
 
-                let userCreated = await user.save();
-                return res.status(200).send(userCreated);
-            }
-            catch(err)
+    if(user)
+    {
+        res.json(
             {
-                return res.status(500).send(err.message);
+                isLoggedIn:true,
+                ...user
             }
-        }
-        else
-        {
-            res.status(422).send('data_incomplete');
-        }
+        );
     }
     else
     {
-        res.status(422).send('req_method_not_supported');
+        res.json(
+            {
+                isLoggedIn: false
+            }
+        );
     }
-};
-
-export default connectDB(handler);
+})

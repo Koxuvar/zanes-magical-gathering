@@ -6,7 +6,6 @@ export default
     {
         try
         {
-            console.log('fuuuuu');
             const thing = await axios.get(`https://api.scryfall.com/cards/autocomplete?q=${query}`);
             if(thing.data == undefined)
             {
@@ -28,7 +27,6 @@ export default
         try
         {
             const searchCl = query.replace(/\s/g, '+');
-            console.log('hello');
             const thing = await axios.get(`https://api.scryfall.com/cards/named?fuzzy=${searchCl}`);
             
             return thing;

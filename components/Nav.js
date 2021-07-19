@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import style from '../styles/Nav.module.scss'
+import useUser from '../lib/useUser';
 
 const Nav = () => {
+    const { user, mutateUser } = useUser();
     return (
         <nav className={style.header}>
 
@@ -37,6 +39,8 @@ const Nav = () => {
                     </div>
                 </div>
             </div>
+
+            {user?.isLoggedIn && <button className={style.logout} href='/api/logout'>Logout</button>}
 
             
         </nav>

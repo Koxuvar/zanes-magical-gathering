@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import useDebounce from '../utils/debounceHook';
 import API from '../utils/API';
 import Autocomplete from './Autocomplete';
+import useUser from '../lib/useUser';
 
 
 function importAll(r) 
@@ -17,13 +18,14 @@ const missingCards = importAll(require.context('../public/img/missing', false, /
 
 const Showcase = () => {
 
+    const {user, mutateUser} = useUser();
+
     const [search, setSearch] = useState([]);
     const [results, setResults] = useState([]);
     const [card, setCard] = useState([]);
     const [photos, setPhotos] = useState([''])
 
     const debouncedSearchTerm = useDebounce(search, 500);
-    // const debouncedResutls = useDebounce(results, 500);
 
     useEffect(() => {
         if (!search)
@@ -68,7 +70,6 @@ const Showcase = () => {
         API.searchCards(s)
         .then((res) =>
         {
-            console.log(res);
             if(res == undefined)
             {
 
@@ -81,7 +82,6 @@ const Showcase = () => {
 
             setCard(res.data);
             setPhotos(<Image src={res.data.image_uris.normal} alt='card pix' width='488' height='680'></Image>);
-            console.log(card)
         });
     }
 

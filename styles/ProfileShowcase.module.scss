@@ -7,7 +7,7 @@ $border_color: rgba(199, 193, 201, 0.342);
 
 .top_container {
     position: relative;
-    top: 7rem;
+    top: 12rem;
     font-family: Oxygen;
     align-items: center;    
     justify-content: center;
@@ -83,4 +83,8 @@ $border_color: rgba(199, 193, 201, 0.342);
     }
 
 
+}
+
+.bottom_container{
+    margin-bottom: 3rem;
 }

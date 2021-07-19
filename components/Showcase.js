@@ -105,7 +105,6 @@ const Showcase = () => {
                 
                 <div className={style.data_wrap} id='user_display'>
                     <div className={style.img_wrap}>
-                        {/*<img src={card != undefined ? photos : ''} id='imgSet'></img> */}
                         {photos}
                     </div>
                     
@@ -117,10 +116,6 @@ const Showcase = () => {
 
                 </div>
             </div>
-            {/* <div className={style.text_hold}>
-                <h2>below are the current legal standard sets</h2>
-                
-            </div> */}
         </>
     )
 }

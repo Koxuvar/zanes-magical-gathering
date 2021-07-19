@@ -46,14 +46,18 @@ const SignIn = () => {
             <div className={styles.container}>
 
                 <form className={styles.sign_in_wrap} onSubmit={handleSubmit}>
-                    <h1>welcome back</h1>
+                    <h1>welcome back!</h1>
                     <input name='userName' placeholder='username'></input>
                     <input name='userPassword' placeholder='password'></input>
                     {errorMsg && <p className="error">{errorMsg}</p>}
-                    <button type='submit' >Sign In</button>
+                    <button className={styles.btn} type='submit' >sign in</button>
                 </form>
             </div>
-            <Link href='/Register'>need to register?</Link>
+            
+            <div className={styles.register}>
+                <h2><Link href='/Register'>need to register?</Link></h2>
+            </div>
+            
             <Footer />
         </>
     )

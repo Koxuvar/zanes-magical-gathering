@@ -151,6 +151,23 @@ $menu-speed: 0.75s;
 
 .logout{
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  color: rgb(245, 244, 245);
+  border: rgba(223, 207, 222, 0.973) 2px solid;
+  border-radius: .2rem;
+  font: inherit;
+  font-size: .7rem;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  transition: 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+        transform: translateY(-0.25em);
+    }
 }

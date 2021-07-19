@@ -1,6 +1,7 @@
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Showcase from '../components/ProfileShowcase'
+import GameLog from './Logs.js'
 import Register from './Register';
 
 const Profile = () => {
@@ -9,7 +10,7 @@ const Profile = () => {
         <>
             <Nav />
             <Showcase />
-            
+            <GameLog />
             {/* <Footer /> */}
         </>
     )

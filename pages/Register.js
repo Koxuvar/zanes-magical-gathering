@@ -60,11 +60,14 @@ const Register = () => {
                         <input name='userPassword' placeholder='password'></input>
                         <input name='userPasswordCheck' placeholder='reenter password'></input>
                         { errorMsg && <h4>{errorMsg}</h4>}
-                        <button type='submit'>Register</button>
+                        <button className={styles.btn} type='submit'>register</button>
                     </form>
                 </div>
 
-                <Link href='/SignIn'>meant to sign in?</Link>
+                <div className={styles.signin}>
+                    <h2><Link href='/SignIn'>meant to sign in?</Link></h2>
+                </div>
+                
 
             <Footer />
         </>

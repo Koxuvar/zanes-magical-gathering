@@ -11,13 +11,13 @@ export default connectDB(withSession(async (req, res) =>
     {
         let passwordHash = await bcrypt.hash(userPassword, 10);
 
-        let {name, decks} = User.create({
+        let {name, decks, since} = User.create({
             name: userName,
             password: passwordHash,
             decks: []
         });
         
-        const user = {isLoggedIn: true, name, decks};
+        const user = {isLoggedIn: true, name, decks, since};
         req.session.set('user', user);
         await req.session.save();
         res.status(200).json(user);

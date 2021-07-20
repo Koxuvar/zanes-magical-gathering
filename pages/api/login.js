@@ -28,7 +28,7 @@ export default connectDB(withSession(async (req, res) =>
             return;
         }
 
-        const user = {isLoggedIn: true, name: dbUser[0].name, decks:dbUser[0].decks};
+        const user = {isLoggedIn: true, name: dbUser[0].name, decks:dbUser[0].decks, since: dbUser[0].since};
         req.session.set('user', user);
         await req.session.save();
         res.status(200).json(user)

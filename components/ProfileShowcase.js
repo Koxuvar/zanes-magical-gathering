@@ -2,10 +2,11 @@ import styles from '../styles/ProfileShowcase.module.scss'
 import Image from 'next/image'
 import proPic from '../public/img/avatars/mask_avatars_four.png'
 import GameLog from '../pages/Logs.js'
-
+import useUser from '../lib/useUser';
 
 
 const ProfileShowcase = () => {
+    const {user, mutateUser} = useUser();
     return (
         <>
           
@@ -19,7 +20,7 @@ const ProfileShowcase = () => {
 
                     <div className={styles.data_card}>
                     <h1>username</h1>
-                    <h2>user</h2>
+                    <h2>{user.name}</h2>
                     </div>
 
                     <div className={styles.data_card}>
@@ -28,15 +29,15 @@ const ProfileShowcase = () => {
                     </div>
 
                     <div className={styles.data_card}>
-                        <h1>last login</h1>
-                        <h2>07.14.2021</h2>
+                        <h1>member since</h1>
+                        <h2>{user.since}</h2>
                     </div>
                 </div>
 
                 <div className={styles.display_data}>
 
                     <div className={styles.deck_name}>
-
+                        
                         <h1>U/R Blitz</h1>
                         <h1>U/W Miracles</h1>
                         <h1>Esper Stoneblade</h1>

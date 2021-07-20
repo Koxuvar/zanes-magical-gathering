@@ -2,8 +2,6 @@ import styles from '../styles/AboutMagic.module.scss'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import MagicBanner from '../components/MagicBanner'
-import Image from 'next/image'
-import Banner from '../public/img/magicbanner3.jpg'
 
 
 const About = () => {

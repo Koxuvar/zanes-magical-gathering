@@ -4,7 +4,8 @@ const Autocomplete = (props) =>
 {
     
     const btnSearch = (e) => {
-        console.log(props.suggestions)
+        const searchCriteria = e.target.textContent;
+        props.getCard(searchCriteria);
     }
     
     return(

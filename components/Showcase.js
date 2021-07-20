@@ -67,6 +67,11 @@ const Showcase = () => {
             return;
         }
 
+        getCard(s);
+    }
+
+    const getCard = (s) =>
+    {
         API.searchCards(s)
         .then((res) =>
         {
@@ -82,6 +87,7 @@ const Showcase = () => {
 
             setCard(res.data);
             setPhotos(<Image src={res.data.image_uris.normal} alt='card pix' width='488' height='680'></Image>);
+            setResults([]);
         });
     }
 
@@ -99,7 +105,7 @@ const Showcase = () => {
                 <input className={style.search} type='text' placeholder='search for cards here...' value={search} onChange={handleInputChange} onKeyPress={handleSubmit}></input>
 
                 <div className={style.btn_wrap}>
-                    <Autocomplete suggestions={results} />
+                    <Autocomplete suggestions={results} getCard={getCard}/>
                 </div>
                 
                 

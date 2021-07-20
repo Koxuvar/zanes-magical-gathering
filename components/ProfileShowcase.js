@@ -14,6 +14,7 @@ const ProfileShowcase = () => {
 
                 <div className={styles.img_wrap}>
                     <Image src={proPic} />
+                    <button className={styles.btn_update}>update profile picture</button>
                 </div>
 
                 <div className={styles.display_info}>

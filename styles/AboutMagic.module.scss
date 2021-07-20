@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&display=swap');
+
 .container {
     min-height: 100vh;
     padding: 0 0.5rem;
@@ -50,26 +52,38 @@
   }
   
   .card {
-    font-family: Merriweather;
-    font-style: italic;
+    // font-family: Merriweather;
+    font-family: 'Cormorant Unicase', serif;
+    font-style: Bold;
     margin: 1rem;
     padding: 1.5rem;
     text-align: left;
     color: inherit;
     text-decoration: none;
     font-size: 20px;
+    color: rgb(70, 66, 66);
+    // text-shadow: 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92), 0 0 1px rgb(23, 23, 92);
 
-    border: 25px solid #B88846;
+    border: 25px solid #24fad6;
     border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+
+
+    // border: 10px solid white;
+    // border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><defs><linearGradient id='redgradient'><stop offset='0' stop-color='%23FFC14D'/><stop offset='0.362' stop-color='%23FF4834'/><stop offset='1' stop-color='%233B0300'/></linearGradient></defs><g id='Layer_1'><path d='M0,0 L50,0 L50,50 L0,50 L0,0 z' fill='url(%23redgradient)' width='100%' height='100%'/></g></svg>") 10% stretch;
+
+  //   box-sizing: content-box;
+  // border-width: 8px;
+  // border-style: solid;
+  // border-image: linear-gradient(to right bottom, #100b3c, #919ace);
+  // border-image-slice: 1;
+  // }
+
   }
 
-  @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
+  .br {
+            margin-bottom: 2em;
+  }
 
-}
 
 
 

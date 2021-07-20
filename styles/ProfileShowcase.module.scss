@@ -26,6 +26,26 @@ $border_color: rgba(199, 193, 201, 0.342);
             height: 18rem;
             width: 15rem;
         }
+
+        .btn_update {
+            background: none;
+            color: rgb(245, 244, 245);
+            border: rgba(223, 207, 222, 0.973) 2px solid;
+            border-radius: .3rem;
+            font: inherit;
+            font-size: .7rem;
+            line-height: 1;
+            margin: 0.5em;
+            padding: 1em 2em;
+            transition: 250ms ease-in-out;
+
+                &:hover,
+                &:focus {
+                    cursor: pointer;
+                    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                    transform: translateY(-0.25em);
+                }
+        }
     }
 
     .display_info {

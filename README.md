@@ -37,7 +37,7 @@ The application has multiple pages including:
 
 1. Landing page:
 
-![landing img](/public/img/search-page.png)
+![landing img](/public/img/readme/search-page.png)
 
 ![search options](/public/img/readme/search-options.png)
 

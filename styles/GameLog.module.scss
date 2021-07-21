@@ -4,11 +4,12 @@ $txt_clr: rgb(237, 235, 238);
 
 .container {
     position: relative;
-    top: 12rem;
+    top: 11rem;
+    margin: 5rem auto;
     align-items: center;
     justify-content: center;
-    margin: auto;
-    margin-bottom: 5rem;
+    
+    margin-bottom: 59rem;
     width: 27rem;
     height: 25rem;
     color: $txt_clr;
@@ -34,7 +35,7 @@ $txt_clr: rgb(237, 235, 238);
         font-family: Poppins;
         position: absolute;
         left: 50%;
-        top: 162.5%;
+        top: 172%;
         
         transform: translate(-50%, -50%);
         color: $txt_clr;

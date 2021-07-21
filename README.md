@@ -37,31 +37,22 @@ The application has multiple pages including:
 
 1. Landing page:
 
-![landing img](/public/img/readme/search-page.png)
+![landing img](/public/img/readme/home.png)
 
-![search options](/public/img/readme/search-options.png)
+![search options](/public/img/readme/search_func.png)
 
-![search results](/public/img/readme/search-results.png)
+2. Sign in:
 
-2. About Page:
+![sign-in img](/public/img/readme/sign_in.png)
 
-![about img](/public/img/readme/about-page.png)
+3. Play Keeper:
 
-3. Sign in:
+![play img](/public/img/readme/life_track.png)
 
-![sign-in img](/public/img/readme/signin-page.png)
+4. Profile:
 
-4. Register:
-
-![register img](/public/img/readme/register-page.png)
-
-5. Play Keeper:
-
-![play img](/public/img/readme/play-page.png)
-
-6. Menu:
-
-![menu img](/public/img/readme/menu.png)
+![menu img](/public/img/readme/profile_top.png)
+![menu img](/public/img/readme/profile_btm.png)
 
 
 

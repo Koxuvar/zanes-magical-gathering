@@ -33,9 +33,10 @@ $txt_clr: rgb(237, 235, 238);
     
     .btn {
         font-family: Poppins;
-        position: absolute;
+        position: relative;
         left: 50%;
-        top: 172%;
+        bottom: 36.5rem;
+        
         
         transform: translate(-50%, -50%);
         color: $txt_clr;
@@ -55,7 +56,7 @@ $txt_clr: rgb(237, 235, 238);
         &::before {
             content: "";
             display: inline-block;
-            position: absolute;
+            position: relative;
             top: 0;
             left: 0;
             right: 100%;
@@ -69,7 +70,7 @@ $txt_clr: rgb(237, 235, 238);
             display: inline-block;
             background-image: url("https://image.flaticon.com/icons/png/128/109/109617.png");
             color: pink;
-            position: absolute;
+            position: relative;
             top: 0;
             left: calc(100% - 3em);
             right: 3em;
@@ -89,6 +90,24 @@ $txt_clr: rgb(237, 235, 238);
             &::after {
                 right: 0;
                 transition: right 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+            }
+        }
+    }
+}
+
+@media only screen and (width: 375px) {
+    
+    .container {
+        width: 24rem;
+        margin-left: .5rem;
+        position: relative;
+        top: 8rem;
+
+        .btn_hold {
+            
+            .btn{
+                position: relative;
+                top: 40rem;
             }
         }
     }

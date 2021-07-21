@@ -10,7 +10,6 @@ $soft-white: rgba(255, 255, 255, 0.911);
     justify-content: center;
     align-items: center;
     max-width: 100rem;
-    background-attachment: fixed;
 
     .sign_in_wrap {
         display: grid;
@@ -58,7 +57,7 @@ $soft-white: rgba(255, 255, 255, 0.911);
             font-family: Poppins;
             position: absolute;
             left: 50%;
-            top: 64%;
+            top: 65%;
             transform: translate(-50%, -50%);
             color: $txt_clr;
             background-color: rgb(65, 10, 65);
@@ -122,8 +121,8 @@ $soft-white: rgba(255, 255, 255, 0.911);
 
     h2 {
         position: relative;
-        bottom: 10rem;
-        left: 45%;
+        bottom: 6rem;
+        left: 41%;
         color: $txt_clr;
         transition: 300ms ease-in-out;
 
@@ -131,4 +130,31 @@ $soft-white: rgba(255, 255, 255, 0.911);
             color: pink;
         }
     } 
+}
+
+@media only screen and (width: 375px) {
+    .container {
+        margin-top: 15rem;
+        margin-left: 5.5rem;
+        width: 20.1rem;
+
+        .sign_in_wrap {
+            
+            input {
+                margin-top: 4rem;
+            }
+            .btn {
+                position: relative;
+                left: 50%;
+                margin-top: 6rem;
+            }
+        }
+    }
+
+    .register {
+        display: block;
+        position: relative;
+        margin-top: 2rem;
+        margin-left: 4.5rem;
+    }
 }

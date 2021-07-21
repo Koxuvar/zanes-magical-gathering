@@ -57,7 +57,7 @@ The application has multiple pages including:
 
 ## Video Walkthrough
 
-![video walkthough](https://www.youtube.com/watch?v=PRL2YyuIsjg)
+Click [video here](https://www.youtube.com/watch?v=PRL2YyuIsjg) to go to the video walkthrough.
 
 
 

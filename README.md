@@ -30,17 +30,48 @@ To run the application, follow the steps below:
 
 This application is meant for both newcomers to Magic: The Gathering as well as seasoned players as a game-aid. Zane's Magical Gathering has been created to easily search cards, provide a counter for lives as well as possible additional counts (tokens, poison, +1+1, etc.), and to have a personal profile to show win statistics.
 
+## Run
+```npm run dev`` to initialize the application on local port. This will launch the home page where users have the ability to run searches for cards. Sign in and register are on separate routes selected through menu to allow the application to have use without authentication as well.
+
+The application has multiple pages including: 
+
+1. Landing page:
+
+![landing img] (/public/img/search-page.png)
+
+![search options] (/public/img/readme/search-options.png)
+
+![search results] (/public/img/readme/search-results.png)
+
+2. About Page:
+
+![about img] (/public/img/readme/about-page.png)
+
+3. Sign in:
+
+![sign-in img] (/public/img/readme/signin-page.png)
+
+4. Register:
+
+![register img] (/public/img/readme/register-page.png)
+
+5. Play Keeper:
+
+![play img] (/public/img/readme/play-page.png)
+
+6. Menu:
+
+![menu img] (/public/img/readme/menu.png)
 
 
-## Contributing
 
-Contributions are welcome by following the steps below:
 
-1. Fork the Project
-2. Create your Feature Branch 
-3. Commit your Changes 
-4. Push to the Branch 
-5. Open a Pull Request
+## Contributions
+* [Zane Gifillan](https://github.com/Zane-Gilfillan)
+* [Connor Sullivan](https://github.com/Koxuvar)
+* [Alexandra Grassl](https://github.com/AGRASSL)
+
+
 
 
 

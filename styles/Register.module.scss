@@ -10,7 +10,6 @@ $txt_clr: rgb(237, 235, 238);
     justify-content: center;
     align-items: center;
     max-width: 100rem;
-    background-attachment: fixed;
 
     .register_wrap {
         display: grid;
@@ -58,7 +57,7 @@ $txt_clr: rgb(237, 235, 238);
             font-family: Poppins;
             position: absolute;
             left: 50%;
-            top: 64%;
+            top: 66%;
             transform: translate(-50%, -50%);
             color: $txt_clr;
             background-color: rgb(65, 10, 65);
@@ -126,8 +125,8 @@ $txt_clr: rgb(237, 235, 238);
 
     h2 {
         position: relative;
-        bottom: 10rem;
-        left: 45%;
+        bottom: 5rem;
+        left: 39.5%;
         color: $txt_clr;
         transition: 300ms ease-in-out;
 
@@ -135,4 +134,32 @@ $txt_clr: rgb(237, 235, 238);
             color: pink;
         }
     } 
+}
+
+@media only screen and (width: 375px) {
+    .container {
+        margin-top: 15rem;
+        margin-left: 6rem;
+        width: 20.1rem;
+
+        .register_wrap {
+            
+            input {
+                margin-top: 4rem;
+            }
+            .btn {
+                position: relative;
+                left: 50%;
+                top: 140%;
+            }
+        }
+    }
+
+    .signin {
+        display: block;
+        position: relative;
+        top: 3rem;
+        margin-top: 2rem;
+        margin-left: 3.5rem;
+    }
 }

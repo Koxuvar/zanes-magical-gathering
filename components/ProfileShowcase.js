@@ -1,20 +1,47 @@
 import styles from '../styles/ProfileShowcase.module.scss'
 import Image from 'next/image'
-import proPic from '../public/img/avatars/mask_avatars_four.png'
 import GameLog from '../pages/Logs.js'
 import useUser from '../lib/useUser';
+import { useState, useEffect } from "react";
+import one from '/public/img/avatars/mask_avatars_one.png'
+import two from '/public/img/avatars/mask_avatars_two.png'
+import three from '/public/img/avatars/mask_avatars_three.png'
+import four from '/public/img/avatars/mask_avatars_four.png'
+import five from '/public/img/avatars/mask_avatars_five.png'
+import six from '/public/img/avatars/mask_avatars_six.png'
 
+function importAll(r) 
+{
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+}
+
+const missingAvatars = importAll(require.context('../public/img/avatars', false, /\.(png|jpe?g|svg)$/));
 
 const ProfileShowcase = () => {
+    
     const {user, mutateUser} = useUser();
+    const [photos, setPhotos] = useState([''])
+
+
+    const profileLoop = (res) => {
+
+        var keys = Object.keys(missingAvatars);
+        let maskImage = missingAvatars[keys[ keys.length * Math.random() << 0]];
+        setPhotos(<Image src={maskImage.default.src} alt='card pix' width='200' height='200'></Image>)
+        console.log(maskImage)
+        return; 
+    }
+
     return (
         <>
           
           <div className={styles.top_container}>
 
                 <div className={styles.img_wrap}>
-                    <Image src={proPic} />
-                    <button className={styles.btn_update}>update profile picture</button>
+                    {photos}
+                    <button className={styles.btn_update} onClick={profileLoop} >change avatar</button>
                 </div>
 
                 <div className={styles.display_info}>

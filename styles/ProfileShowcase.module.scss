@@ -6,6 +6,7 @@ $text-color: rgba(211, 209, 209, 0.842);
 $border_color: rgba(199, 193, 201, 0.342);
 
 .top_container {
+
     position: relative;
     top: 12rem;
     font-family: Oxygen;
@@ -18,7 +19,7 @@ $border_color: rgba(199, 193, 201, 0.342);
 
     .img_wrap {
 
-        margin-left: 4rem;
+        margin-left: 3rem;
         
 
         img {
@@ -28,6 +29,9 @@ $border_color: rgba(199, 193, 201, 0.342);
         }
 
         .btn_update {
+            position: relative;
+            left: 3.8rem;
+            top: 1rem;
             background: none;
             color: rgb(245, 244, 245);
             border: rgba(223, 207, 222, 0.973) 2px solid;

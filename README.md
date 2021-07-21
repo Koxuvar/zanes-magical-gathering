@@ -55,6 +55,10 @@ The application has multiple pages including:
 ![menu img](/public/img/readme/profile_btm.png)
 
 
+## Video Walkthrough
+
+![video walkthough](https://www.youtube.com/watch?v=PRL2YyuIsjg)
+
 
 
 ## Contributions

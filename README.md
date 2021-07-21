@@ -55,6 +55,11 @@ The application has multiple pages including:
 ![menu img](/public/img/readme/profile_btm.png)
 
 
+## Deployed Site
+
+[Zane's Magical Gathering](http://zanelandia.herokuapp.com/)
+
+
 ## Video Walkthrough
 
 Click [video here](https://www.youtube.com/watch?v=PRL2YyuIsjg) to go to the video walkthrough.

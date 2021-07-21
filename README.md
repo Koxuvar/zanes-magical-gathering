@@ -45,7 +45,7 @@ The application has multiple pages including:
 
 2. About Page:
 
-![about img] (https://github.com/Koxuvar/zanes-magical-gathering/blob/main/public/img/readme/about-page.png)
+![about img] (public/img/readme/about-page.png)
 
 3. Sign in:
 

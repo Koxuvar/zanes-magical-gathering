@@ -13,9 +13,7 @@ QuillNoSSRWrapper.displayName = 'QuillNoSSRWrapper'
 const Logs = () => {
     return (
         <>
-            
-            <Nav />
-
+        
             <div className={style.container}>
                 <h1 className={style.title}>game logs</h1>
                 <QuillNoSSRWrapper className={style.quill}  theme="snow" />

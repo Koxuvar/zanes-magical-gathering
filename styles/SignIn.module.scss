@@ -55,9 +55,9 @@ $soft-white: rgba(255, 255, 255, 0.911);
 
         .btn {
             font-family: Poppins;
-            position: absolute;
+            position: relative;
             left: 50%;
-            top: 65%;
+            top: 110%;
             transform: translate(-50%, -50%);
             color: $txt_clr;
             background-color: rgb(65, 10, 65);
